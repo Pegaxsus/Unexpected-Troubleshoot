@@ -1,0 +1,21 @@
+1. Show current devices:
+
+	sudo usbguard list-devices
+	
+2. Plug your USB
+
+3. Execute step1.
+
+4. Search for you device on the list, normally at the end, note the ID number at the start of the line.
+
+5. Enable your device:
+
+	sudo usbguard allow-device <ID_number>
+	
+6. Input/Output the desired information from the device.
+
+7. Disable the device again:
+
+	sudo usbguard reject-device <ID_number>
+	
+8. Close terminal
